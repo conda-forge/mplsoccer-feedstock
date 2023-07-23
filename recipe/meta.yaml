@@ -1,5 +1,5 @@
 {% set name = "mplsoccer" %}
-{% set version = "1.1.12" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mplsoccer-{{ version }}.tar.gz
-  sha256: 9570f20db97e3a2cdadc98465eefd18e3380b1d5656e6c0bcf51103d53845b53
+  sha256: 9e82bd99acbde3a16941fd6cc5453872897013d4c1073eda73e4db858c648e8f
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - matplotlib-base
+    - matplotlib-base >=3.6
     - numpy
     - pandas
     - pillow
