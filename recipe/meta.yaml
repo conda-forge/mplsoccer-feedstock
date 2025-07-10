@@ -1,5 +1,5 @@
 {% set name = "mplsoccer" %}
-{% set version = "1.5.0" %}
+{% set version = "1.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mplsoccer-{{ version }}.tar.gz
-  sha256: 1c86bababc2922a35fc523431effd2f8158c98d8481a98fa4a1ad126f39e412c
+  sha256: 1260317e08bd01984b2122e4aafddcbd468cf47d8c922eef8676cb17a6227d3f
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
