@@ -1,13 +1,13 @@
 {% set name = "mplsoccer" %}
-{% set version = "1.8.0" %}
+{% set version = "1.8.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mplsoccer-{{ version }}.tar.gz
-  sha256: 394697e12f3b18d096163510b491fc79c60855f98e6d5fede00acab2a0b505ad
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/mplsoccer-{{ version }}.tar.gz
+  sha256: 77d504d38e19ef310f4a22c95a78572db1e6f1a8f721c7d5535e3623ddada2e8
 
 build:
   noarch: python
